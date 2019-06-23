@@ -23,7 +23,7 @@ class Main(object):
 		__service_name_list = ("active", "passive", "screen", "filter")
 
                 usage = "Usage: use --help for further information"
-		description = "Flashligth: Light your ways through Pentest"
+		description = "Flashlight: Light your ways through Pentest"
                 parser = argparse.ArgumentParser(description = description, usage = usage)
 
 		parser.add_argument('-p', '--project', dest = 'project', action = 'store', help = 'Project Name', required = True)
@@ -68,7 +68,7 @@ class Main(object):
 
 	def _run(self, scan_type):
 	
-		""" Run flashligth as a root"""
+		""" Run flashlight as a root"""
 
 		if os.geteuid() != 0:
 			Core.print_error("Run as ROOT")
